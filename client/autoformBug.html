@@ -1,0 +1,22 @@
+<head>
+  <title>autoformBug</title>
+</head>
+
+<body>
+
+{{#autoForm collection="Activities" id="createActivityForm" type="insert"}}
+    <fieldset>
+        {{> afFieldInput name='muscleGroup' label='Muscle Group' options=muscleGroups noselect=true}}
+    <button type="submit" class="btn btn-primary">Save</button>
+    </fieldset>
+{{/autoForm}}
+
+  <h1>Welcome to Meteor!</h1>
+
+  {{> hello}}
+</body>
+
+<template name="hello">
+  <button>Click Me</button>
+  <p>You've pressed the button {{counter}} times.</p>
+</template>
